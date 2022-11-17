@@ -1,5 +1,6 @@
+import os, ast, shutil, random, time
+from module.clear import *
 ##配置检测##
-import os, ast, shutil, random
 if os.path.exists(".end.dev"):
     temp = 1
 else:
@@ -7,9 +8,13 @@ else:
     temp = open('.end.dev','w')
     temp.write("{"+f'\n\t\"NAME\":\t\"小熊猫\",\n\t\"USER\":\t\"大笨蛋\"'+"\n}")
     temp.close()
+    time.sleep(0.3)
     print("正在重新启动...")
-    print("█" * 500)
-    i = os.system("cls")
+    time.sleep(0.2)
+    print("█" * 5000)
+    clear()
+
+
 ##配置检测↑##
 ##导入插件##
 from plugins.ai import *
