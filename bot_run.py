@@ -7,8 +7,9 @@ else:
     temp = open('.end.dev','w')
     temp.write("{"+f'\n\t\"NAME\":\t\"小熊猫\",\n\t\"USER\":\t\"大笨蛋\"'+"\n}")
     temp.close()
-    print("请重启bot！")
-    请重启bot
+    print("正在重新启动...")
+    print("█" * 500)
+    i = os.system("cls")
 ##配置检测↑##
 ##导入插件##
 from plugins.ai import *
