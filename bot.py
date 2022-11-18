@@ -1,4 +1,4 @@
-import os, ast, shutil, random, time, sys, platform
+import os, ast, shutil, random, time, sys
 from module.clear import *
 
 ##配置检测##
@@ -58,7 +58,8 @@ if os.path.exists(".end.dev"):
         temp = open('.end.dev','w')
         temp.write("{"+f'\n\t\"NAME\":\t\"{NAME}\",\n\t\"USER\":\t\"{USER}\"'+"\n}")
         temp.close()
-    if (platform.system()=='Linux'):
+    print("选择你的系统（输入数字）\n1.Linux\n2.Windows\n3.other")
+    if system == (1):
         system = (1)
     else:
         system = (0)
