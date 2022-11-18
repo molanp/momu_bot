@@ -4,7 +4,7 @@ import ast, os
 data = open('.end.dev',"r")
 data = data.read()
 data = ast.literal_eval(data)
-def NAME():
+def NICKNAME():
     NAME = data["NAME"]
     return NAME
 

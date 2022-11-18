@@ -49,14 +49,14 @@ else:
 ##生成配置
 if os.path.exists(".end.dev"):
     try: 
-      ask = str(input(f'当前bot名字是：{NAME()}\n当前你的昵称是：{USER()}\n是否更改？[y/N]'))
+      ask = str(input(f'当前bot名字是：{NICKNAME()}\n当前你的昵称是：{USER()}\n是否更改？[y/N]'))
     except EOFError:
       sys.exit(0)
     if ask == "y":
-        NAME = str(input("输入bot名称："))
+        NICKNAME = str(input("输入bot名称："))
         USER = str(input("输入你的昵称："))
         temp = open('.end.dev','w')
-        temp.write("{"+f'\n\t\"NAME\":\t\"{NAME}\",\n\t\"USER\":\t\"{USER}\"'+"\n}")
+        temp.write("{"+f'\n\t\"NAME\":\t\"{NICKNAME}\",\n\t\"USER\":\t\"{USER}\"'+"\n}")
         temp.close()
     system = int(input("选择你的系统（输入数字）\n1.Linux\n2.Windows\n3.other\n"))
     if system == (1):
@@ -83,7 +83,7 @@ while 1:
             "你叫",
             "你叫什么"
             ]:
-            result = f'我是{NAME()}啊，{USER()}的脑袋是不是坏掉了？'
+            result = f'我是{NICKNAME()}啊，{USER()}的脑袋是不是坏掉了？'
         else:
             result = hello(ask)
         if ask == "":
