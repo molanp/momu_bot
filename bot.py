@@ -1,4 +1,4 @@
-import os, ast, shutil, random, time, sys
+import os, ast, shutil, random, time, sys, platform
 from module.clear import *
 
 ##配置检测##
@@ -58,9 +58,16 @@ if os.path.exists(".end.dev"):
         temp = open('.end.dev','w')
         temp.write("{"+f'\n\t\"NAME\":\t\"{NAME}\",\n\t\"USER\":\t\"{USER}\"'+"\n}")
         temp.close()
+        if(platform.system()=='Linux'):
+          system = (1)
+        else:
+          system = (0)
 while 1:
     try: 
-        ask = str(input("\033[0;32;40m输入想对bot说的话：\033[0m"))
+      if system == (1): 
+        ask = str(input("\033[33m输入想对bot说的话：\033[0m"))
+      else: 
+        ask = str(input("输入想对bot说的话"))
     except EOFError: 
         sys.exit(0)
     if num == (1):
@@ -100,7 +107,10 @@ while 1:
         #学说话判定
         if ask == learn_speak():
            result = learn()
-        print(f'\033[0;33;40m{result}\033[0m')
+          if system == (1): 
+            print(f'\033[33m{result}\033[0m')
+          else: 
+            print(result)
         temp = open('temp/learn.temp','w')
         temp.write(result)
         temp.close
