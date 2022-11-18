@@ -1,7 +1,7 @@
 # momu_BOT(沫沫BOT)
 ## A simple terminal bot based on Python.
 # Special reminder: this bot has no graphical interface, only black and white terminals!
-# English|[中文](https://github.com/molanp/momu_bot/master/README.md)
+# English|[中文](https://github.com/molanp/momu_bot/blob/master/README.md)
 ## What can she do?
 ~~Nothing~~
 
