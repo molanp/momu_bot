@@ -58,7 +58,7 @@ if os.path.exists(".end.dev"):
         temp = open('.end.dev','w')
         temp.write("{"+f'\n\t\"NAME\":\t\"{NAME}\",\n\t\"USER\":\t\"{USER}\"'+"\n}")
         temp.close()
-    print("选择你的系统（输入数字）\n1.Linux\n2.Windows\n3.other")
+    system = str(input("选择你的系统（输入数字）\n1.Linux\n2.Windows\n3.other"))
     if system == (1):
         system = (1)
     else:
