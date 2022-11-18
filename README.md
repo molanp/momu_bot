@@ -1,7 +1,7 @@
 # momu_BOT(沫沫BOT)
 ## 一个简简单单的终端bot，基于Python
 # 特别提醒：此bot没有图形界面，只有黑白的终端！
-# 中文|[English](https://github.com/molanp/momu_bot/main/README_en.md)
+# 中文|[English](https://github.com/molanp/momu_bot/master/README_en.md)
 ## 她可以做什么？
 ~~貌似没什么用~~
 
