@@ -11,7 +11,7 @@ def AI(ask) -> str:
        for j in range(len(anime_keys)):
            if anime_keys[j].find(ask[i]) == -1:
                continue
-           temp = open("temp/index.json",'a')
+           temp = open("temp/index.json",'w')
            temp.write(f'{anime_keys[j]},')
            temp.close()
         

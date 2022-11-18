@@ -58,14 +58,14 @@ if os.path.exists(".end.dev"):
         temp = open('.end.dev','w')
         temp.write("{"+f'\n\t\"NAME\":\t\"{NAME}\",\n\t\"USER\":\t\"{USER}\"'+"\n}")
         temp.close()
-    if(platform.system()=='Linux'):
+    if (platform.system()=='Linux'):
         system = (1)
     else:
         system = (0)
 while 1:
     try: 
       if system == (1): 
-        ask = str(input("\033[33m输入想对bot说的话：\033[0m"))
+        ask = str(input("\033[32m输入想对bot说的话：\033[0m"))
       else: 
         ask = str(input("输入想对bot说的话："))
     except EOFError: 
@@ -85,9 +85,11 @@ while 1:
             result = f'我是{NAME()}啊，{USER()}的脑袋是不是坏掉了？'
         else:
             result = hello(ask)
+        if ask == "":
+            result = "输入不得为空！"
     ####在下方添加插件####
     ####在上方添加插件####
-        if result == None:   #词库匹配回答
+        elif result == None:   #词库匹配回答
            result = AI(ask)
        #添加插件说明：
        #(el)if result == None:
@@ -107,10 +109,10 @@ while 1:
         #学说话判定
         if ask == learn_speak():
            result = learn()
-           if system == (1): 
-              print(f'\033[33m{result}\033[0m')
-           else: 
-              print(result)
+        if system == (1): 
+           print(f'\033[33m{result}\033[0m')
+        else: 
+           print(result)
         temp = open('temp/learn.temp','w')
         temp.write(result)
         temp.close
