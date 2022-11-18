@@ -1,5 +1,6 @@
 import os, ast, shutil, random, time
 from module.clear import *
+
 ##配置检测##
 if os.path.exists(".end.dev"):
     temp = 1
@@ -47,7 +48,10 @@ else:
     temp = open("temp/learn.temp","x")
 ##生成配置
 if os.path.exists(".end.dev"):
-    ask = str(input(f'当前bot名字是：{NAME()}\n当前你的昵称是：{USER()}\n是否更改？[y/N]'))
+    try: 
+      ask = str(input(f'当前bot名字是：{NAME()}\n当前你的昵称是：{USER()}\n是否更改？[y/N]'))
+    except EOFError:
+      ask = None
     if ask == "y":
         NAME = str(input("输入bot名称："))
         USER = str(input("输入你的昵称："))
@@ -55,7 +59,10 @@ if os.path.exists(".end.dev"):
         temp.write("{"+f'\n\t\"NAME\":\t\"{NAME}\",\n\t\"USER\":\t\"{USER}\"'+"\n}")
         temp.close()
 while 1:
-    ask = str(input("\033[32m输入想对bot说的话：\033[0m"))
+    try: 
+        ask = str(input("\033[32m输入想对bot说的话：\033[0m"))
+    except EOFError: 
+        ask = None
     if num == (1):
         answer = ask
         temp = open('temp/answer.temp','w')
