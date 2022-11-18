@@ -58,16 +58,16 @@ if os.path.exists(".end.dev"):
         temp = open('.end.dev','w')
         temp.write("{"+f'\n\t\"NAME\":\t\"{NAME}\",\n\t\"USER\":\t\"{USER}\"'+"\n}")
         temp.close()
-        if(platform.system()=='Linux'):
-          system = (1)
-        else:
-          system = (0)
+    if(platform.system()=='Linux'):
+        system = (1)
+    else:
+        system = (0)
 while 1:
     try: 
       if system == (1): 
         ask = str(input("\033[33m输入想对bot说的话：\033[0m"))
       else: 
-        ask = str(input("输入想对bot说的话"))
+        ask = str(input("输入想对bot说的话："))
     except EOFError: 
         sys.exit(0)
     if num == (1):
