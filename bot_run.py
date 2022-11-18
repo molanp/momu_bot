@@ -51,7 +51,7 @@ if os.path.exists(".end.dev"):
     try: 
       ask = str(input(f'当前bot名字是：{NAME()}\n当前你的昵称是：{USER()}\n是否更改？[y/N]'))
     except EOFError:
-      ask = None
+      ask = "n"
     if ask == "y":
         NAME = str(input("输入bot名称："))
         USER = str(input("输入你的昵称："))
@@ -62,7 +62,7 @@ while 1:
     try: 
         ask = str(input("\033[32m输入想对bot说的话：\033[0m"))
     except EOFError: 
-        ask = None
+        ask = "你好"
     if num == (1):
         answer = ask
         temp = open('temp/answer.temp','w')
