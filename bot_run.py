@@ -1,4 +1,4 @@
-import os, ast, shutil, random, time
+import os, ast, shutil, random, time, sys
 from module.clear import *
 
 ##配置检测##
@@ -62,7 +62,7 @@ while 1:
     try: 
         ask = str(input("\033[32m输入想对bot说的话：\033[0m"))
     except EOFError: 
-        print(error)
+        sys.exit(1)
     if num == (1):
         answer = ask
         temp = open('temp/answer.temp','w')
