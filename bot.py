@@ -60,7 +60,7 @@ if os.path.exists(".end.dev"):
         temp.close()
 while 1:
     try: 
-        ask = str(input("\033[32m输入想对bot说的话：\033[0m"))
+        ask = str(input("\033[0;32;40m输入想对bot说的话：\033[0m"))
     except EOFError: 
         sys.exit(0)
     if num == (1):
@@ -100,7 +100,7 @@ while 1:
         #学说话判定
         if ask == learn_speak():
            result = learn()
-        print(f'\033[33m{result}\033[0m')
+        print(f'\033[0;33;40m{result}\033[0m')
         temp = open('temp/learn.temp','w')
         temp.write(result)
         temp.close
