@@ -107,10 +107,10 @@ while 1:
         #学说话判定
         if ask == learn_speak():
            result = learn()
-          if system == (1): 
-            print(f'\033[33m{result}\033[0m')
-          else: 
-            print(result)
+           if system == (1): 
+              print(f'\033[33m{result}\033[0m')
+           else: 
+              print(result)
         temp = open('temp/learn.temp','w')
         temp.write(result)
         temp.close
