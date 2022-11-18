@@ -62,7 +62,7 @@ while 1:
     try: 
         ask = str(input("\033[32m输入想对bot说的话：\033[0m"))
     except EOFError: 
-        ask = "你好"
+        print(error)
     if num == (1):
         answer = ask
         temp = open('temp/answer.temp','w')
