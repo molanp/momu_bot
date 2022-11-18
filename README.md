@@ -8,6 +8,7 @@
 让你在断网的时候也可以聊天
 ## 使用方法
 Windows中双击运行`start.bat`
+~~当然你也可以双击`start.sh`~~
 
 Linux中执行`Python bot.py`
 
