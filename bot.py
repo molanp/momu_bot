@@ -1,6 +1,8 @@
 import os, ast, shutil, random, time, sys
 from module.clear import *
 
+os.system('')
+
 ##配置检测##
 if os.path.exists(".end.dev"):
     temp = 1
@@ -58,17 +60,9 @@ if os.path.exists(".end.dev"):
         temp = open('.end.dev','w')
         temp.write("{"+f'\n\t\"NAME\":\t\"{NICKNAME}\",\n\t\"USER\":\t\"{USER}\"'+"\n}")
         temp.close()
-    system = int(input("选择你的系统（输入数字）\n1.Linux\n2.Windows\n3.other\n"))
-    if system == (1):
-        system = (1)
-    else:
-        system = (0)
 while 1:
     try: 
-      if system == (1): 
         ask = str(input("\033[32m输入想对bot说的话：\033[0m"))
-      else: 
-        ask = str(input("输入想对bot说的话："))
     except EOFError: 
         sys.exit(0)
     if num == (1):
@@ -110,10 +104,7 @@ while 1:
         #学说话判定
         if ask == learn_speak():
            result = learn()
-        if system == (1): 
-           print(f'\033[33m{result}\033[0m')
-        else: 
-           print(result)
+        print(f'\033[33m{result}\033[0m')
         temp = open('temp/learn.temp','w')
         temp.write(result)
         temp.close
