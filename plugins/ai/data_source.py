@@ -48,8 +48,8 @@ def repeat() -> str:
     有人连续发一样的话的回答
     '''
     #读取重复内容
-    if os.path.exists("temp/answer.temp"):
-        answer = open('temp/answer.temp','r')
+    if os.path.exists("temp/answer"):
+        answer = open('temp/answer','r')
         answer = answer.read()
     return (
         random.choice(

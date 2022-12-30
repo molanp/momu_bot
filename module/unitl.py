@@ -13,11 +13,12 @@ def USER():
     return USER
 
 def num():
-    num = open('temp/num.temp','r')
+    num = open('temp/num','r')
     num = num.read()
     return num
 
 def learn_speak():
-    learn_speak = open ('temp/learn.temp','r')
+    learn_speak = open('temp/learn','r')
     learn_speak = learn_speak.read()
     return learn_speak
+    
