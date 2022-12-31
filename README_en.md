@@ -7,9 +7,9 @@
 
 Let you chat even when there is no internet.
 ## How to use
-Double-click to run `start.bat`~~or `start.sh`~~ in Windows.
+Double-click to run `start.bat` in Windows.
 
-Execute command `Python bot.py` in Linux.
+Cd the bor dirs and Execute command `Python bot.py` in Linux.
 
 [Help documents](https://molanp.github.io/momu_bot)
 ## Plug-in development

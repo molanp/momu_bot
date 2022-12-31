@@ -8,9 +8,8 @@
 让你在断网的时候也可以聊天
 ## 使用方法
 Windows中双击运行`start.bat`
-~~当然你也可以双击`start.sh`~~
 
-Linux中执行`Python bot.py`
+Linux中进入bot目录并执行`Python bot.py`
 
 [文档](https://molanp.github.io/momu_bot)
 ## 插件开发问题
