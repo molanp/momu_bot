@@ -1,8 +1,6 @@
 from module.unitl import *
 
 import random, os
-
-
 #打招呼
 def hello(ask):
     '''
