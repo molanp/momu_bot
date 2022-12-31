@@ -1,0 +1,1 @@
+__plugin_PATH__ = ['plugins']
